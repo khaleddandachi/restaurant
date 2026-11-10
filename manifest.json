@@ -1,0 +1,21 @@
+{
+  "name": "سناك الضيعة — طرابلس والشمال",
+  "short_name": "سناك الضيعة",
+  "description": "أطيب شاورما وساندويشات وبرغر في طرابلس والشمال مع توصيل سريع لباب بيتك",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FBF6EE",
+  "theme_color": "#C8553D",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "./sw-shawarma-chicken.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
