@@ -1,0 +1,46 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" dir="rtl">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FCF5F2"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3B2A20" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="450" fill="url(#bgGrad)"/>
+  <rect x="12" y="12" width="576" height="426" rx="20" fill="none" stroke="#EBD8D0" stroke-width="1.5"/>
+
+  <!-- Subtle Decorative Corner Accents -->
+  <circle cx="36" cy="36" r="4" fill="#B8653F" opacity="0.35"/>
+  <circle cx="564" cy="36" r="4" fill="#B8653F" opacity="0.35"/>
+
+  <!-- Main Food Graphic -->
+  <g filter="url(#softShadow)">
+        <g transform="translate(300, 205)">
+      <ellipse cx="0" cy="85" rx="150" ry="24" fill="#E2D5C4" opacity="0.5"/>
+      <ellipse cx="0" cy="25" rx="145" ry="75" fill="#FFFFFF" stroke="#E2D5C4" stroke-width="4"/>
+      <!-- Folded Crepe Triangle -->
+      <polygon points="0,-40 -110,45 105,45" fill="#E8C388" stroke="#D4A764" stroke-width="3"/>
+      <!-- Chocolate Drizzle Lines -->
+      <path d="M-80,30 Q-50,-10 0,25 Q50,-5 80,30" stroke="#4A2810" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M-60,40 Q-20,10 20,40" stroke="#4A2810" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- Strawberry slices & Banana -->
+      <circle cx="-35" cy="15" r="14" fill="#E63946"/>
+      <circle cx="-35" cy="15" r="8" fill="#F4A261"/>
+      <circle cx="35" cy="20" r="14" fill="#FFF2DC"/>
+      <circle cx="0" cy="35" r="13" fill="#E63946"/>
+    </g>
+  </g>
+
+  <!-- Arabic Dish Title Badge (Calm, legible, elegant) -->
+  <g transform="translate(300, 400)">
+    <rect x="-190" y="-22" width="380" height="40" rx="20" fill="#FFFFFF" stroke="#EBD8D0" stroke-width="1.5"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Cairo', system-ui, sans-serif" font-weight="700" font-size="17" fill="#3B2A20">كريب حلو نوتيلا وموز وفراولة</text>
+  </g>
+
+  <!-- Small Brand Watermark Top Left -->
+  <text x="36" y="44" font-family="'Cairo', system-ui, sans-serif" font-weight="600" font-size="12" fill="#7A685D">سناك الضيعة • طرابلس</text>
+</svg>
