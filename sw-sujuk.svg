@@ -1,0 +1,61 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450" dir="rtl">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FBF4ED"/>
+    </radialGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3B2A20" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="450" fill="url(#bgGrad)"/>
+  <rect x="12" y="12" width="576" height="426" rx="20" fill="none" stroke="#E8D5C4" stroke-width="1.5"/>
+
+  <!-- Subtle Decorative Corner Accents -->
+  <circle cx="36" cy="36" r="4" fill="#C8553D" opacity="0.35"/>
+  <circle cx="564" cy="36" r="4" fill="#C8553D" opacity="0.35"/>
+
+  <!-- Main Food Graphic -->
+  <g filter="url(#softShadow)">
+        <g transform="translate(300, 205)">
+      <!-- Plate shadow -->
+      <ellipse cx="0" cy="90" rx="160" ry="26" fill="#E2D5C4" opacity="0.6"/>
+      <!-- Saj/Pita Wrap Cut in Half (left half angled) -->
+      <g transform="rotate(-14, -60, 20)">
+        <ellipse cx="-60" cy="20" rx="35" ry="58" fill="#FBF3E4" stroke="#D1A76E" stroke-width="4"/>
+        <!-- Inner filling cross-section -->
+        <ellipse cx="-60" cy="20" rx="28" ry="50" fill="#6B3E26"/>
+        <path d="M-75,0 Q-55,-15 -45,5 Q-40,25 -65,35" fill="#749B45" opacity="0.9"/>
+        <circle cx="-62" cy="12" r="7" fill="#E63946"/>
+        <circle cx="-54" cy="28" r="6" fill="#F4A226"/>
+        <ellipse cx="-66" cy="-8" rx="5" ry="8" fill="#FFFFFF" opacity="0.85"/>
+        <!-- Bread body roll -->
+        <path d="M-60,-38 C-12,-48 30,-30 40,20 C45,65 0,72 -60,78 Z" fill="#F1D2A4" stroke="#C89655" stroke-width="3"/>
+        <path d="M-15,-25 Q15,0 5,45" stroke="#9A6930" stroke-width="2.5" fill="none" opacity="0.5"/>
+        <path d="M-35,-15 Q-5,10 -15,55" stroke="#9A6930" stroke-width="2.5" fill="none" opacity="0.5"/>
+      </g>
+      <!-- Saj Wrap Right half -->
+      <g transform="rotate(18, 55, 30)">
+        <path d="M30,-40 C90,-35 125,-10 120,40 C115,80 75,85 25,75 Z" fill="#F1D2A4" stroke="#C89655" stroke-width="3"/>
+        <ellipse cx="25" cy="18" rx="28" ry="52" fill="#6B3E26"/>
+        <circle cx="28" cy="12" r="8" fill="#749B45"/>
+        <circle cx="20" cy="30" r="6" fill="#FFFFFF"/>
+        <circle cx="34" cy="-5" r="7" fill="#E63946"/>
+      </g>
+      <!-- Garnish mint & pickles on the side -->
+      <path d="M-115,75 Q-95,60 -80,75 Q-95,90 -115,75 Z" fill="#588157"/>
+      <ellipse cx="-130" cy="80" rx="14" ry="7" fill="#8A9A5B" transform="rotate(20,-130,80)"/>
+    </g>
+  </g>
+
+  <!-- Arabic Dish Title Badge (Calm, legible, elegant) -->
+  <g transform="translate(300, 400)">
+    <rect x="-190" y="-22" width="380" height="40" rx="20" fill="#FFFFFF" stroke="#E8D5C4" stroke-width="1.5"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Cairo', system-ui, sans-serif" font-weight="700" font-size="17" fill="#3B2A20">ساندويش سجق أرمني حار</text>
+  </g>
+
+  <!-- Small Brand Watermark Top Left -->
+  <text x="36" y="44" font-family="'Cairo', system-ui, sans-serif" font-weight="600" font-size="12" fill="#7A685D">سناك الضيعة • طرابلس</text>
+</svg>
